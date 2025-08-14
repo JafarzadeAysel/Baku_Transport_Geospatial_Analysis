@@ -47,5 +47,5 @@ District boundaries were loaded from **opendata.az** for spatial aggregation.
 - Geospatial data collection and processing
 - Distance analysis using GeoPandas
 - Mapping and visualization with Folium
-- Identifying gaps in public transportation and bike infrastructure
+- Identifying areas where public transportation could be more convenient for students
 - Aggregation and spatial analysis by district
