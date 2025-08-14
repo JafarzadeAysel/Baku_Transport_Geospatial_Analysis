@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f72cf1493373d78f3a2a94f38c8aea54 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f72cf1493373d78f3a2a94f38c8aea54" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f72cf1493373d78f3a2a94f38c8aea54 = L.map(
+                "map_f72cf1493373d78f3a2a94f38c8aea54",
+                {
+                    center: [40.4093, 49.8671],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c6b6d3f731e356bef02f9e8c69016ee7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c6b6d3f731e356bef02f9e8c69016ee7.addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var marker_a9624dcfbc9346a76aaf43392889efe0 = L.marker(
+                [40.449732499999996, 50.0853853],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_7cd61942bc65d1594ae9b21bfe6bc832 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f5952e1a9146907e46312ab6ac56e41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf9df87b4b9df8ece68872cecc6fd5b5 = $(`<div id="html_bf9df87b4b9df8ece68872cecc6fd5b5" style="width: 100.0%; height: 100.0%;">101 saylı Peşə Liseyi \ Binə</div>`)[0];
+                popup_3f5952e1a9146907e46312ab6ac56e41.setContent(html_bf9df87b4b9df8ece68872cecc6fd5b5);
+            
+        
+
+        marker_a9624dcfbc9346a76aaf43392889efe0.bindPopup(popup_3f5952e1a9146907e46312ab6ac56e41)
+        ;
+
+        
+    
+    
+            marker_a9624dcfbc9346a76aaf43392889efe0.bindTooltip(
+                `<div>
+                     101 saylı Peşə Liseyi \ Binə
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9624dcfbc9346a76aaf43392889efe0.setIcon(icon_7cd61942bc65d1594ae9b21bfe6bc832);
+            
+    
+            var marker_ef1e7101a270ec5283bb1623a72a72de = L.marker(
+                [40.38061729999999, 49.9458496],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_c3e2c18d9bf5b5d7aa444f4a68f53e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d74b36459c908e5f3fecaf69c1604b8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed0d96d16a4ad9317ce42cfa07676d11 = $(`<div id="html_ed0d96d16a4ad9317ce42cfa07676d11" style="width: 100.0%; height: 100.0%;">5 saylı Bakı Peşə Liseyi</div>`)[0];
+                popup_d74b36459c908e5f3fecaf69c1604b8c.setContent(html_ed0d96d16a4ad9317ce42cfa07676d11);
+            
+        
+
+        marker_ef1e7101a270ec5283bb1623a72a72de.bindPopup(popup_d74b36459c908e5f3fecaf69c1604b8c)
+        ;
+
+        
+    
+    
+            marker_ef1e7101a270ec5283bb1623a72a72de.bindTooltip(
+                `<div>
+                     5 saylı Bakı Peşə Liseyi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ef1e7101a270ec5283bb1623a72a72de.setIcon(icon_c3e2c18d9bf5b5d7aa444f4a68f53e6e);
+            
+    
+            var marker_56b1b458c52b7482a6ce3447b4271f40 = L.marker(
+                [40.4292803, 49.954595700000006],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_47a6fface5f8c6e90a8bc4dbe8bf3e94 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e1e2cc2867b3eab683d02d6e0b3ced1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b230a672249bfe870814efd1f3b5c58 = $(`<div id="html_0b230a672249bfe870814efd1f3b5c58" style="width: 100.0%; height: 100.0%;">1 saylı Bakı Peşə Liseyi \ Bakıxanov</div>`)[0];
+                popup_3e1e2cc2867b3eab683d02d6e0b3ced1.setContent(html_0b230a672249bfe870814efd1f3b5c58);
+            
+        
+
+        marker_56b1b458c52b7482a6ce3447b4271f40.bindPopup(popup_3e1e2cc2867b3eab683d02d6e0b3ced1)
+        ;
+
+        
+    
+    
+            marker_56b1b458c52b7482a6ce3447b4271f40.bindTooltip(
+                `<div>
+                     1 saylı Bakı Peşə Liseyi \ Bakıxanov
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56b1b458c52b7482a6ce3447b4271f40.setIcon(icon_47a6fface5f8c6e90a8bc4dbe8bf3e94);
+            
+    
+            var marker_a71b26a1fe517b4bbd5e51776ec12e33 = L.marker(
+                [40.3103387, 49.59751730000001],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_76e152b807f98b01ae024eb3bf6a861e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abb7f4e2f4833f48667d99ddd949c088 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_106fe6463faa9f9885e828ad555868fc = $(`<div id="html_106fe6463faa9f9885e828ad555868fc" style="width: 100.0%; height: 100.0%;">8 saylı Bakı Peşə Liseyi</div>`)[0];
+                popup_abb7f4e2f4833f48667d99ddd949c088.setContent(html_106fe6463faa9f9885e828ad555868fc);
+            
+        
+
+        marker_a71b26a1fe517b4bbd5e51776ec12e33.bindPopup(popup_abb7f4e2f4833f48667d99ddd949c088)
+        ;
+
+        
+    
+    
+            marker_a71b26a1fe517b4bbd5e51776ec12e33.bindTooltip(
+                `<div>
+                     8 saylı Bakı Peşə Liseyi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a71b26a1fe517b4bbd5e51776ec12e33.setIcon(icon_76e152b807f98b01ae024eb3bf6a861e);
+            
+    
+            var marker_18dde781adfbd54d77fbdac408cac4f9 = L.marker(
+                [40.3671815, 50.0786394],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_953dbd7c95d9a8be294cbff2b93ca089 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3eb5366be506263aff3b6b05a97b297c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17c385ade14d0a2857c151af74a10ec2 = $(`<div id="html_17c385ade14d0a2857c151af74a10ec2" style="width: 100.0%; height: 100.0%;">Yanğın Texniki Kolleci \ Hövsan</div>`)[0];
+                popup_3eb5366be506263aff3b6b05a97b297c.setContent(html_17c385ade14d0a2857c151af74a10ec2);
+            
+        
+
+        marker_18dde781adfbd54d77fbdac408cac4f9.bindPopup(popup_3eb5366be506263aff3b6b05a97b297c)
+        ;
+
+        
+    
+    
+            marker_18dde781adfbd54d77fbdac408cac4f9.bindTooltip(
+                `<div>
+                     Yanğın Texniki Kolleci \ Hövsan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18dde781adfbd54d77fbdac408cac4f9.setIcon(icon_953dbd7c95d9a8be294cbff2b93ca089);
+            
+    
+            var marker_defa64d1f971e149df08a3350a4e2e68 = L.marker(
+                [40.4305758, 49.9541487],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_061721df596c227be4ea9a95c431515e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4300dca534511e208650ff76b8a81cea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cc37dda18a86749dd1eb45f75e7df06 = $(`<div id="html_4cc37dda18a86749dd1eb45f75e7df06" style="width: 100.0%; height: 100.0%;">Celt Kollec \ Bakıxanov</div>`)[0];
+                popup_4300dca534511e208650ff76b8a81cea.setContent(html_4cc37dda18a86749dd1eb45f75e7df06);
+            
+        
+
+        marker_defa64d1f971e149df08a3350a4e2e68.bindPopup(popup_4300dca534511e208650ff76b8a81cea)
+        ;
+
+        
+    
+    
+            marker_defa64d1f971e149df08a3350a4e2e68.bindTooltip(
+                `<div>
+                     Celt Kollec \ Bakıxanov
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_defa64d1f971e149df08a3350a4e2e68.setIcon(icon_061721df596c227be4ea9a95c431515e);
+            
+    
+            var marker_e00ab211d015be2f6f1a2a050ea39b7d = L.marker(
+                [40.4298418, 49.9552524],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_4a514870a81d281708eb5047602387b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7d47a36bef60847aa32006c28ea4ba5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7e49420e77e86d117aaeeed8515ed7c = $(`<div id="html_e7e49420e77e86d117aaeeed8515ed7c" style="width: 100.0%; height: 100.0%;">12 saylı Bakı Peşə Liseyi \ Bakıxanov</div>`)[0];
+                popup_b7d47a36bef60847aa32006c28ea4ba5.setContent(html_e7e49420e77e86d117aaeeed8515ed7c);
+            
+        
+
+        marker_e00ab211d015be2f6f1a2a050ea39b7d.bindPopup(popup_b7d47a36bef60847aa32006c28ea4ba5)
+        ;
+
+        
+    
+    
+            marker_e00ab211d015be2f6f1a2a050ea39b7d.bindTooltip(
+                `<div>
+                     12 saylı Bakı Peşə Liseyi \ Bakıxanov
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e00ab211d015be2f6f1a2a050ea39b7d.setIcon(icon_4a514870a81d281708eb5047602387b4);
+            
+    
+            var marker_aa9deaebb0805e1273ffcfa99afc7567 = L.marker(
+                [40.40832993395226, 49.937297071745796],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_87718556d1634a74dec600cfaad981a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acefdb94e20b57427ba336247e63bf7d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e61856bb6d5dda56a65d8ed6d0fb193d = $(`<div id="html_e61856bb6d5dda56a65d8ed6d0fb193d" style="width: 100.0%; height: 100.0%;">Xəzər Universiteti</div>`)[0];
+                popup_acefdb94e20b57427ba336247e63bf7d.setContent(html_e61856bb6d5dda56a65d8ed6d0fb193d);
+            
+        
+
+        marker_aa9deaebb0805e1273ffcfa99afc7567.bindPopup(popup_acefdb94e20b57427ba336247e63bf7d)
+        ;
+
+        
+    
+    
+            marker_aa9deaebb0805e1273ffcfa99afc7567.bindTooltip(
+                `<div>
+                     Xəzər Universiteti
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa9deaebb0805e1273ffcfa99afc7567.setIcon(icon_87718556d1634a74dec600cfaad981a1);
+            
+    
+            var marker_e6714f3abb6e92bac26abc0382906848 = L.marker(
+                [40.40377110002572, 49.76039408338252],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_7dab72509fed60ff8015fe748c8f330e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a4402298cc9f67bb0a323d98e75e5a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09968455445dbba2df90726ea5675890 = $(`<div id="html_09968455445dbba2df90726ea5675890" style="width: 100.0%; height: 100.0%;">Moskva Dövlət Universitetinin Bakı Filialı</div>`)[0];
+                popup_0a4402298cc9f67bb0a323d98e75e5a5.setContent(html_09968455445dbba2df90726ea5675890);
+            
+        
+
+        marker_e6714f3abb6e92bac26abc0382906848.bindPopup(popup_0a4402298cc9f67bb0a323d98e75e5a5)
+        ;
+
+        
+    
+    
+            marker_e6714f3abb6e92bac26abc0382906848.bindTooltip(
+                `<div>
+                     Moskva Dövlət Universitetinin Bakı Filialı
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e6714f3abb6e92bac26abc0382906848.setIcon(icon_7dab72509fed60ff8015fe748c8f330e);
+            
+    
+            var marker_e248a93422232a625304fd6a7c254045 = L.marker(
+                [40.30997257080067, 49.597131637186976],
+                {
+}
+            ).addTo(map_f72cf1493373d78f3a2a94f38c8aea54);
+        
+    
+            var icon_f368845aac34aa6b7cca38be636ebe75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36ac0658beec3279bfb1a0ca8292ff5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a705e25c7e3973b4ed3f88ac06a46781 = $(`<div id="html_a705e25c7e3973b4ed3f88ac06a46781" style="width: 100.0%; height: 100.0%;">8 saylı Peşə Liseyi \ Qızıldaş</div>`)[0];
+                popup_36ac0658beec3279bfb1a0ca8292ff5b.setContent(html_a705e25c7e3973b4ed3f88ac06a46781);
+            
+        
+
+        marker_e248a93422232a625304fd6a7c254045.bindPopup(popup_36ac0658beec3279bfb1a0ca8292ff5b)
+        ;
+
+        
+    
+    
+            marker_e248a93422232a625304fd6a7c254045.bindTooltip(
+                `<div>
+                     8 saylı Peşə Liseyi \ Qızıldaş
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e248a93422232a625304fd6a7c254045.setIcon(icon_f368845aac34aa6b7cca38be636ebe75);
+            
+</script>
+</html>
