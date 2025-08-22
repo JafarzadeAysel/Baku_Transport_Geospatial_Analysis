@@ -1,51 +1,47 @@
-# Baku Transportation Analysis 🚎🚲🗺️
+# Public Transport:  Data-Driven Insights on Commuter Choices 🚎🚗🚌🚉
+## Objective: 
 
-This project consists of two main parts: **Bus Stop Analysis** and **Bike Lane Analysis** in Baku, Azerbaijan. The analyses focus on public transportation accessibility and bike infrastructure.
+Understand the transport choices and behaviors of residents in Sumgait and Khirdalan to inform potential public transit improvements.
 
----
+##  Methodology
+1. Data Sourcing & Ownership
 
-## 1. Bus Stop Analysis🚎🏫
+Designed and administered a custom survey.
 
-### 1.1 Collecting Bus Stop Information
-I collected bus stop data from **OpenStreetMap** using **OSMnx**.  
+Collected responses from 100+ participants.
 
-### 1.2 Collecting University Information
-Educational institutions (universities, colleges, and lyceums) were also collected from OSMnx. Polygon campuses were converted to centroids for accurate distance calculation.  
+Personally managed data collection, cleaning, and preparation from scratch.
 
-### 1.3 Distance Analysis and Insights
-I calculated the distance from each educational institution to the nearest bus stop.  
-- Institutions located more than **500 meters** from a bus stop were identified.  
-- **Insight:** These areas show where public transportation access could be improved for students, highlighting potential opportunities for better service coverage.
+## Ad-hoc Analysis
 
-- Click to view the interactive map in detail➡️[Link🔗](https://jafarzadeaysel.github.io/Baku_Transport_Geospatial_Analysis/university_distance.html)
+Explored relationships between demographics, transport availability, and commuter choices.
 
-![](https://github.com/JafarzadeAysel/Baku_Transport_Geospatial_Analysis/blob/main/photos/distance_university.png)
----
+Identified patterns in preferred destinations, metro connectivity needs, and transfer avoidance behavior.
 
-## 2. Bike Lane Analysis 🚲🗺️
+## Modeling
 
-### 2.1 Collecting Bike Lane Information
-Bike lane data was collected from **OpenStreetMap data**.  
+Built a Conditional Logit Model to analyze the factors influencing mode choice.
 
-### 2.2 Loading Regions Dataset
-District boundaries were loaded from **opendata.az** for spatial aggregation.  
+Tested variables such as cost, waiting time, walking time, crowdedness, age, and location.
 
-### 2.3 Length Analysis and Insights
-- Maximum bike lane length is in **Mardəkan**.  
-- **Sabail District** has the longest total bike lanes.  
-- One bike lane crosses **two districts**, showing inter-district connectivity.
-- Click to view the interactive map in detail➡️[Link🔗](https://jafarzadeaysel.github.io/Baku_Transport_Geospatial_Analysis/bike_district.html)
+## Results & Strategic Insights
+Key Findings:
+- Destination demand is concentrated on 28 May, Yasamal, Nəsimi, and Xətai for commuting purposes.
 
-![](https://github.com/JafarzadeAysel/Baku_Transport_Geospatial_Analysis/blob/main/photos/district_bike.png)
+- Xırdalan residents want more direct metro connections without transfers, especially to Yasamal.
 
----
-## Data Sources
-- Bus stops & Universities: OpenStreetMap (via OSMnx)
-- District boundaries: opendata.az
+- Sumqayıt residents seek connections beyond the main rail link, with requests for more comfortable and direct routes to central and peripheral districts.
 
-## Key Skills Demonstrated
-- Geospatial data collection and processing
-- Distance analysis using GeoPandas
-- Mapping and visualization with Folium
-- Identifying gaps in public transportation and bike infrastructure
-- Aggregation and spatial analysis by district
+- Signs that Sumqayıt residents may prefer taxis and older respondents slightly prefer the fast train less (not statistically significant due to sample size).
+
+
+
+## Skills Demonstrated🎯
+
+- Survey design & data ownership from scratch
+
+- Data cleaning & preparation
+
+- Advanced statistical modeling (Conditional Logit)
+
+- Insight synthesis & business communication
